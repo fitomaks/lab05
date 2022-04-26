@@ -20,6 +20,7 @@ jobs:
       - name : Prepare environment
         shell: bash
         run  : |
+          git --version
           git submodule update --init --recursive
           sudo apt install lcov
           
